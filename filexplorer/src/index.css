@@ -1,0 +1,17 @@
+.folder{
+  background-color: lightgray;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.addOptions > button{
+  background-color: white;
+  padding: 0 2px;
+}
+
+/* For space around all the folders */
+.parent{
+  margin:10px;
+}

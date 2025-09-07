@@ -1,0 +1,132 @@
+body {
+    font-family: sans-serif;
+}
+
+:root {
+    --btn-hover: #cacaca;
+    --modal-bg: rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.employee {
+    display: flex;
+}
+
+.header>button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.header>button:hover {
+    background-color: var(--btn-hover);
+}
+
+.employee>div {
+    border: 1px solid black;
+    overflow-y: scroll;
+    height: 450px;
+}
+
+.employee_list {
+    width: 30%;
+}
+
+.employee_details {
+    width: 70%;
+}
+
+.employee_list,
+.employee_details {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.employee_list_title,
+.employee_details_title {
+    border-bottom: solid 1px black;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.employee_list_names{
+    display: flex;
+    flex-direction: column;
+}
+.employee_list_item{
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgoldenrodyellow;
+    margin: 10px;
+}
+
+.employee_list_item.selected,
+.employee_list_item:hover
+{
+    background-color: var(--btn-hover);
+}
+
+.employee_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+.employee_info > img{
+    height:250px;
+    width:250px;
+    object-fit: contain;
+}
+.fullname{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.addEmployeeModal{
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: var(--modal-bg);
+    /* Width and height are for taking the full width of the addEmployeeModal container */
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.addEmployeeForm{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: ghostwhite;
+    /* For aligning Add a New Employee text */
+    text-align: center; 
+}
+
+.addEmployeeForm > input,.addEmployeeForm > div >input{
+    padding: 10px;
+}
+
+.addEmployeeForm > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-btn{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}

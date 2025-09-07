@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <h1>Employee Database</h1>
+            <button class="employee_add">Add Employee</button>
+        </header>
+        <div class="employee">
+            <div class="employee_list">
+                <span class="employee_list_title">Employee List</span>
+                <div class="employee_list_names"></div>
+            </div>
+            <div class="employee_details">
+                <span class="employee_details_title">Employee Information</span>
+                <div class="employee_info"></div>
+            </div>
+        </div>
+        <div class="addEmployeeModal">
+            <form class="addEmployeeForm">
+                    Add a New Employee
+                <div class="name">
+                    <input name="firstName" type="text" placeholder="FirstName"/>
+                    <input name="lastName" type="text" placeholder="LastName"/>
+                </div>
+                <input type="date" name="dob"/>
+                <input type="email" name="email" placeholder="Email"/>
+                <input type="number" name="contactNumber" placeholder="Contact"/>
+                <input type="text" name="address" placeholder="Address" />
+                <input type="submit" value="Submit" class="submit-btn"/>
+            </form>
+        </div>
+    </div>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="src/index.js"></script>
+</body>
+
+</html>
